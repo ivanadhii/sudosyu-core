@@ -81,7 +81,7 @@ export interface Container {
   restartCount: number;
   ports: string[];
   createdAt: string;
-  cpu?: number;
+  cpuPercent?: number;
   memMB?: number;
   memPercent?: number;
   netIn?: number;

@@ -76,8 +76,8 @@ export function DockerTab({ serverId }: { serverId: string }) {
                     <td className="px-4 py-3 text-gray-400 text-xs">{c.uptime ?? "—"}</td>
                     <td className="px-4 py-3 text-gray-400 text-xs">{c.restartCount}</td>
                     <td className="px-4 py-3 text-xs">
-                      <span className={(c.cpu ?? 0) > 80 ? "text-red-400" : "text-gray-300"}>
-                        {c.cpu != null ? `${c.cpu.toFixed(1)}%` : "—"}
+                      <span className={(c.cpuPercent ?? 0) > 80 ? "text-red-400" : "text-gray-300"}>
+                        {c.cpuPercent != null ? `${c.cpuPercent.toFixed(1)}%` : "—"}
                       </span>
                     </td>
                     <td className="px-4 py-3 text-gray-300 text-xs">
